@@ -1,0 +1,62 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "BasicProgram_DetailsOfStudent.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5t3xZb9obvyp",
+        "outputId": "275aa3ac-3d69-46e4-ecef-bdeeb8aa89db"
+      },
+      "source": [
+        "print(\"Welcome!\")\n",
+        "dict = {'Name': 'Usha', 'Age': 20, 'College' : 'CMR University', 'Contact' : 99803856797}\n",
+        "print(dict)\n",
+        "print(\"1. Proceed and save the details. 2. Make any changes?\")\n",
+        "choice = input(\"Enter your choice(1/2)\")\n",
+        "if (choice == '2'):\n",
+        "    dict['Name'] = input(\"Enter name : \")\n",
+        "    dict['Age'] = input(\"Enter age : \")\n",
+        "    dict['College'] = input(\"Enter college : \")\n",
+        "    dict['Contact']= input(\"Enter contact number : \")\n",
+        "else :\n",
+        "    print(\"BYE!\")\n",
+        "print(dict)\n"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Welcome!\n",
+            "{'Name': 'Usha', 'Age': 20, 'College': 'CMR University', 'Contact': 99803856797}\n",
+            "1. Proceed and save the details. 2. Make any changes?\n",
+            "Enter your choice(1/2)2\n",
+            "Enter name : nikhitha\n",
+            "Enter age : 21\n",
+            "Enter college : CmRIT\n",
+            "Enter contact number : 348976895\n",
+            "{'Name': 'nikhitha', 'Age': '21', 'College': 'CmRIT', 'Contact': '348976895'}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
